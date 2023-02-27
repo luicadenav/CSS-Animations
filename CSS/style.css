@@ -47,9 +47,11 @@
 
 .firstSection {
 max-width: 1200px;
-background:url(/assets/Desktop_Backgrounds_1920x1200_6\ 3.png);
+background:url(/assets/first_section_bg.jpg);
 background-repeat: no-repeat;
+background-position: top right;
 margin: 0 auto;
+position: relative;
 
 }
 
@@ -136,8 +138,6 @@ margin: 0 auto;
     color: rgba(102, 102, 102, 1);
 }
 
-
-
 .secondSection button{
     display: block;
     width: 115px;
@@ -209,8 +209,6 @@ span{
     margin-bottom: 40px; 
 }
 
-
-
 /* footer */
 
 footer{
@@ -218,7 +216,6 @@ footer{
     background-color: rgba(70, 69, 71, 1);
     margin: 0 auto;
 
-    
 }
 
 footer img  {
@@ -285,6 +282,43 @@ footer a{
 @media only screen and (min-width:768px) {
     .lines {
         display: none;
+    }
+}
+
+.b-prueba{
+    position: absolute;
+    right: 0;
+    transform: translate(12px,63px);
+}
+.svg-prueba{
+    animation: shadowing 6s ease infinite;    
+}
+
+.dots-container{
+    position: absolute;
+    right: 39px;
+    top:15px;
+    animation: movdots 3s  alternate ease-in-out infinite  ;
+}
+
+
+@keyframes movdots {
+    
+    100%{  
+        transform: scale(1.1);
+    }
+}
+
+@keyframes shadowing{
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
     }
 }
 
